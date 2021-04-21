@@ -1,0 +1,73 @@
+追加したい機能
+    ＊１日の集計表
+        ・件数
+            :VIP
+            :一般
+            :総数
+        ・人数
+            :VIP
+            :一般
+            :総数
+
+    ＊トップページに
+        ・予約一件（一番時間が近いもの　「次の予約」で表示）
+        ・フライト情報一件（直近の投稿）
+        ・その他情報一件（直近の投稿）
+
+    ＊社員ランキング
+
+    ＊スタンバイ時のご案内済みの記録
+
+すること
+＊flight_info, other_infoにshare_date（meeting_date)と同じ物を作成する
+    reserveと同じように１日のみの表示にする。
+＊reserve, flight_info, other_infoのdateをフォームから削除する。
+
+        
+
+
+*********************************************************************
+cart_dbデータベース
+    loginテーブル
+        username var(50) 
+        password var(50)
+
+    reserveテーブル
+        id int(11) AI 
+        passenger_status var(200) null
+        flight_type var(200) null
+        flight_company var(200) null
+        flight_number var(200) null
+        passenger_name var(200) null
+        number_of_people var(11) null
+        meeting_date var(200) null
+        meeting_time var(200) null
+        meeting_place var(200) null
+        destination var(200) null
+        other_info text null
+        share_staff var(200) null
+        created_at timestamp
+
+    flight_infoテーブル
+        id int(11) AI
+        flight_name var(200)
+        content text
+        created_at timestamp
+
+    other_infoテーブル
+        id int(11) AI
+        content text
+        share_staff var(200)
+        created_at timestamp
+    
+    standby_recordテーブル
+        id int AI
+        flight_name var(200)
+        passenger_name var(200)
+        number_of_people var(200)
+        meeting_time var(200)
+        meeting_place var(200)
+        destination var(200)
+        person_in_charge var(200)
+        created_at timestamp
+**********************************************************************
