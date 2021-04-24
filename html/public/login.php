@@ -39,9 +39,9 @@ if($_SESSION['username']){
             <p class="text-danger"><?php echo $_SESSION['login_err']; ?></p>
 
             <form action="top.php" method="post">
-                <input type="text" class="user-form form-control" name="username" placeholder="ユーザ">  
+                <input type="text" class="user-form form-control" name="username" placeholder="ユーザー名" value="test">  
                 <br>      
-                <input type="password" class="form-control" name="password" placeholder="パスワード"> 
+                <input type="password" class="form-control" name="password" placeholder="パスワード" value="test"> 
                 <br>  
                 <input class="btn btn-info" type="submit" value="ログイン"> 
             </form>
