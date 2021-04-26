@@ -7,7 +7,7 @@ Cart me!
 
 # URL
 - [ポートフォリオ](http://35.73.156.91:8080/public)
-<!-- - [説明動画]() -->
+- [説明動画](https://youtu.be/Swk6ySA6L2s)
 
 <br>
 <br>
